@@ -1,190 +1,590 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AURA Studio — Premium Storefront Prototype Hub</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-          },
-          colors: {
-            surface: '#fbf8fe',
-            'surface-container': '#f0edf2',
-            'surface-container-high': '#eae7ed',
-            'on-surface': '#1b1b1f',
-            'on-surface-variant': '#47464b',
-            primary: '#0d0d11',
-            accent: '#625e57',
-            border: '#e8e8ed',
-          }
-        }
-      }
-    };
-  </script>
-</head>
-<body class="bg-surface text-on-surface antialiased font-sans min-h-screen flex flex-col">
-  <!-- Top Announcement -->
-  <header class="bg-primary text-white py-2 px-6 text-center text-xs tracking-widest uppercase font-medium">
-    AURA Studio • Prototype Navigation Hub • Atelier Tech Luxe Design System
-  </header>
 
-  <div class="max-w-6xl mx-auto px-6 py-12 flex-1 w-full">
-    <!-- Brand Title -->
-    <div class="mb-10 text-center max-w-2xl mx-auto">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-xs font-semibold tracking-wider uppercase mb-3 text-on-surface-variant">
-        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-        Interactive Storefront Suite
-      </div>
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-primary uppercase">
-        AURA STUDIO
-      </h1>
-      <p class="text-on-surface-variant mt-3 text-base leading-relaxed">
-        High-end mobile accessories storefront prototype featuring aerospace-grade engineering aesthetic, tactile UI, and complete customer journey screens.
-      </p>
-    </div>
-
-    <!-- Quick Navigation Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-      <!-- 01 Homepage -->
-      <a href="./homepage_aura_studio/code.html" class="group bg-white rounded-2xl border border-border p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-        <div>
-          <div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container mb-4 relative">
-            <img src="./homepage_aura_studio/screen.png" alt="Homepage Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
-            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-              Screen 01
-            </span>
-          </div>
-          <div class="flex items-center justify-between mb-2">
-            <h2 class="text-xl font-bold text-primary group-hover:text-neutral-700 transition-colors">Homepage</h2>
-            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-          </div>
-          <p class="text-sm text-on-surface-variant leading-relaxed">
-            Editorial hero presentation, flagship case release teaser, curated category grids, material engineering breakdown, and customer accolades.
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#ffffff","error":"#ba1a1a","surface-variant":"#e4e1e7","primary":"#000000","surface-container":"#f0edf2","tertiary-container":"#231a0f","on-error":"#ffffff","inverse-on-surface":"#f3f0f5","on-primary-container":"#858388","primary-fixed":"#e4e1e7","on-secondary-fixed":"#1e1b16","tertiary":"#000000","on-background":"#1b1b1f","outline-variant":"#c8c5cb","error-container":"#ffdad6","on-primary-fixed":"#1b1b1f","surface-dim":"#dcd9de","secondary":"#625e57","secondary-container":"#e6dfd5","on-tertiary":"#ffffff","on-surface-variant":"#47464b","on-surface":"#1b1b1f","on-error-container":"#93000a","on-secondary":"#ffffff","on-secondary-fixed-variant":"#4a4640","surface-tint":"#5f5e63","on-primary-fixed-variant":"#47464b","tertiary-fixed-dim":"#d5c4b2","surface-bright":"#fbf8fe","primary-fixed-dim":"#c8c5cb","outline":"#78767b","tertiary-fixed":"#f2e0cd","secondary-fixed-dim":"#ccc6bd","inverse-surface":"#303034","surface-container-high":"#eae7ed","surface-container-highest":"#e4e1e7","on-secondary-container":"#66625b","primary-container":"#1b1b1f","background":"#fbf8fe","secondary-fixed":"#e8e1d8","on-primary":"#ffffff","surface-container-low":"#f6f2f8","inverse-primary":"#c8c5cb","on-tertiary-fixed-variant":"#504537","on-tertiary-container":"#908272","surface":"#fbf8fe","on-tertiary-fixed":"#231a0f"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","margin":"3rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"price-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"label-mono-spec":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"price-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-badge":["Plus Jakarta Sans"]},fontSize:{"price-md":["16px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"42px",letterSpacing:"-0.025em",fontWeight:"700"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.025em",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"label-mono-spec":["11px",{lineHeight:"14px",letterSpacing:"0.02em",fontWeight:"500"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.005em",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"price-lg":["22px",{lineHeight:"26px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-badge":["10px",{lineHeight:"12px",letterSpacing:"0.08em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50"><div class="w-full bg-primary text-on-primary py-2 px-margin-mobile md:px-margin border-b border-surface-variant/20"><div class="max-w-7xl mx-auto flex items-center justify-between font-label-mono-spec text-label-mono-spec tracking-wider uppercase"><div class="hidden md:flex items-center gap-space-sm text-on-primary/70"><span class="material-symbols-outlined text-[14px]">verified</span><span>Engineered Protection</span></div><div class="flex-1 text-center font-medium">Free Worldwide Express Shipping on Orders Over $60 • 30-Day Risk-Free Trial</div><div class="flex items-center gap-space-xs text-on-primary/90 cursor-pointer hover:text-on-primary transition-colors"><span>USD ($)</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div></div></div><div class="w-full bg-surface/85 backdrop-blur-xl border-b border-surface-variant/40"><div class="h-20 max-w-7xl mx-auto px-margin-mobile md:px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm focus:outline-none" data-path="home" href="index.html"><img alt="AURA Studio Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA5Mri_56CHzcoP049bY5pq7I16enCUwuCqE_G7uTJmPRQbb4R6GfM07BBpq5Ovv0W9M_3gtgd9B0kOaAKAwXOtNqoP66G6r4PV78lD75LDB8sMgIa39mSEzwaISKS_SU6bqba5v4-beSvar0eE67SEfU-Qt3tzLRumzTF_JvZrkEKm5Zr0tDrS1MtR3zLMt8fE3gXnRh1UPWPmLdOHp9rZCvlJ_af87XRxJQOk9rBo"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">AURA STUDIO</span></a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="home" href="index.html">Home</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop-all" href="shop.html">Shop All</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="iphone-cases" href="shop.html">iPhone Cases</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="samsung-cases" href="shop.html">Samsung Cases</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="magsafe-and-tech" href="shop.html">MagSafe &amp; Tech</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-sm bg-surface-container-low px-space-md py-2 rounded-full border border-surface-variant/50 focus-within:border-primary transition-all w-48 lg:w-64"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none" placeholder="Search cases..." type="text"/><kbd class="font-label-mono-spec text-[10px] bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant border border-outline-variant/40">⌘K</kbd></div><div class="flex items-center gap-space-sm"><a class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary font-label-badge text-[9px] rounded-full flex items-center justify-center font-bold">2</span></a><a class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cart" href="cart.html"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 px-1.5 min-w-[16px] h-4 bg-primary text-on-primary font-label-badge text-[9px] rounded-full flex items-center justify-center font-bold">1</span></a><a class="p-1 rounded-full hover:ring-2 hover:ring-surface-variant transition-all ml-space-xs" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMcib8OLdpdBJpoiSZ2ujIv5l3D4aKbtuJCxozJYwja9lqWpsL-xTrS1YTaAxWoa22abhVdhWntL8_ZEgh1wVo5KgwUawURcC_uv6eJepbPSZ_yWQoxBlOazrN68e1fImXnO616RywMD3_O92oQ5BtwPHr4TJYuANewiULlKZsJQ4qQ3sQnIS9IRuASK4pxv1nR20iPwVszxzTQ6ohd07g1oEObQyiJDSqnoFD6mW5"/></a></div></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-low py-space-xl md:py-24">
+<div class="absolute inset-0 opacity-40 pointer-events-none">
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-surface-variant blur-3xl"></div>
+<div class="absolute -bottom-24 -left-20 w-80 h-80 rounded-full bg-secondary-container/50 blur-3xl"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text Column -->
+<div class="lg:col-span-7 space-y-space-lg">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-highest/60 backdrop-blur text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-label-badge text-label-badge tracking-widest uppercase">Engineered Armor meets High Fashion</span>
+</div>
+<div class="space-y-space-sm">
+<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero tracking-tight text-on-surface uppercase">
+              Protect your phone. <br class="hidden sm:inline"/>
+<span class="text-on-surface-variant">Express your style.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+              Discover premium phone cases engineered with aerospace-grade impact resistance, neodymium MagSafe alignment, and artisanal tactile finishes to elevate your everyday carry.
+            </p>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center gap-space-sm px-8 py-4 rounded-full bg-primary text-on-primary font-headline-sm text-price-md hover:bg-inverse-surface shadow-md hover:shadow-xl transition-all duration-200 cursor-pointer" href="shop.html">
+<span>SHOP COLLECTION</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-sm px-8 py-4 rounded-full bg-surface-container-lowest text-on-surface font-headline-sm text-price-md shadow-sm hover:shadow-md hover:bg-surface transition-all duration-200 cursor-pointer" href="#bestsellers">
+<span>EXPLORE BESTSELLERS</span>
+</a>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-md max-w-lg">
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/80 shadow-sm flex flex-col items-start gap-1">
+<span class="material-symbols-outlined text-primary text-[20px]">security</span>
+<span class="font-label-mono-spec text-[10px] uppercase font-semibold text-on-surface">12FT Drop Certified</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Lab Tested MIL-STD</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/80 shadow-sm flex flex-col items-start gap-1">
+<span class="material-symbols-outlined text-primary text-[20px]">recycling</span>
+<span class="font-label-mono-spec text-[10px] uppercase font-semibold text-on-surface">100% Recycled PC</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Eco-Polymer Body</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/80 shadow-sm flex flex-col items-start gap-1">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span class="font-label-mono-spec text-[10px] uppercase font-semibold text-on-surface">Lifetime Warranty</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Hassle-Free Care</span>
+</div>
+</div>
+</div>
+<!-- Visual Hero Media -->
+<div class="lg:col-span-5 relative flex justify-center">
+<a href="product.html" class="block group w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-surface-container-high relative cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up editorial studio shot of titanium grey iPhone 16 Pro encased in an ultra-luxurious matte obsidian bumper case with anodized aluminum camera protector ring resting on sculptural smooth concrete plinth in neutral studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBRKKMGN485t1U2-BSwzVGy3-2zbJmOFYa4mAKa2Q0LGiX-SwP0mhpIc-elDmDVYwFQkAWnMuu-k3hZgTHaBnjVwHB-v5RDsKfW0Sxgt_Q65BYZmaTvcxoJatE80qG5hq3QcJEGgOgnLRKFy2xP_ECycFKwVhQOcXlT70LhbfP8Uf8U0qdgHBCHU0DsQrY20W4opE61sHM9rHctREY4jE4UZGnISQRFihxBVnNA-A5"/>
+<div class="absolute bottom-4 left-4 right-4 p-space-md rounded-2xl bg-surface-container-lowest/90 backdrop-blur shadow-lg flex items-center justify-between">
+<div>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant block">FLAGSHIP RELEASE</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">AeroShield Obsidian</span>
+</div>
+<div class="text-right">
+<span class="font-label-mono-spec text-label-mono-spec text-on-surface-variant line-through block">$68</span>
+<span class="font-price-md text-price-md text-on-surface font-bold">$54 USD</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED CATEGORY GRID -->
+<section class="w-full py-space-xl max-w-7xl mx-auto px-margin-mobile md:px-gutter" id="categories">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="font-label-mono-spec text-label-mono-spec text-on-surface-variant uppercase tracking-widest mb-1">01 / Curated Disciplines</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight">Shop by Phone Architecture</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Precision engineered snap-fits sculpted specifically for Apple iOS and Samsung flagship ecosystems.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- 1. iPhone -->
+<a class="group relative rounded-3xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end min-h-[380px] p-space-lg" href="shop.html">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist top view of luxury iPhone 16 Pro Max protective case in space gray laid next to Apple Watch and airpods on bleached travertine surface with clean architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlfNNJvVL3wCU2Bz8ZQ2YXxDQPlhzJEoliL8OF7unWil3a8GZjrW5TfLbF6GPIkOKr3SgpPjwieyjSd48rbK-6c0UbuM6PhJ6XGMJLw36XeYOtF2luDfMPCGncqrFwSCsVhc4KVzSXVADA2T5OLoScAk9aFfgcQp6DKFEWQBQAYuMH7g9vO1ogLFpFJ6uijma3r0xmUmp_hTEzkD5iYz4iE2WMCjMdm_IsiXNjaw9k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+</div>
+<div class="relative z-10 text-on-primary space-y-1">
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary-fixed">Apple Series</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary">iPhone Cases</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">iPhone 16 Pro Max, 16, 15 Pro &amp; Legacy editions.</p>
+</div>
+</a>
+<!-- 2. Samsung -->
+<a class="group relative rounded-3xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end min-h-[380px] p-space-lg" href="shop.html">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial product shot of Samsung Galaxy S24 Ultra encased in slim matte frosted armor case sitting on dark smoked oak desk in designer workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtbqpN729CT9fgldNmnlnBccU2PAi-oXVa9MVLEv5EmXBLFZ3m-CAZNL8tbakif5fyWuhQh3z1LmtuBfFNtyEpmHq4sY8L6bOACDzfis6-jHIhMo679vN5THIXyM2PdtlvbSpJxY4ZHKnRQFs2F6nej-aUn_3WMjwuyvJOxFDuv_cqe9c18afUDw5CAwLkMWYhYg491Mtt73sRApMWETonqpgSJKpwFbgsU4R6J8Vz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+</div>
+<div class="relative z-10 text-on-primary space-y-1">
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary-fixed">Galaxy Series</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary">Samsung Cases</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Galaxy S24 Ultra, S24+, and S23 Ultra armor.</p>
+</div>
+</a>
+<!-- 3. Transparent -->
+<a class="group relative rounded-3xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end min-h-[380px] p-space-lg" href="shop.html">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crystal clear transparent phone case catching sunlight through prism, zero yellowing optical clarity, with subtle silver MagSafe ring against warm sand background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjRP4VofKBQPW8DXnMXW5YAsMEt9jaL5wZ0mOB4XayZ7dAt1M6OOAD-VpTQNsNL8PTKml4PZGFwWOaW_x_Gy6NaQgt1_cRc2B1y4Hm8wHzJQ-6m5xF8IUVmVk7IJLoVVgWQmP2cDPj9pa-rElC0LKdiYtTv8lTpkv8PtfjJ9TvY7xzwL90UXcGuxlbCwNgXlzIhGEkHifPibKewRbu1hg7DBdA0akEM_iLLmegOrpj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+</div>
+<div class="relative z-10 text-on-primary space-y-1">
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary-fixed">Clarity Shield</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary">Transparent &amp; Frost</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Anti-yellowing UV matrix with pure optical transparency.</p>
+</div>
+</a>
+<!-- 4. MagSafe & Tech -->
+<a class="group relative rounded-3xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end min-h-[380px] p-space-lg" href="shop.html">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modular magnetic accessories including ultra-thin titanium phone stand and magnetic leather wallet snapped onto the back of an iPhone case on white marble" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaJqVoRiPKRmC4G-jAp24xLsjfFdhaeYvWp3WtJAMVN6NArbExMUCGFZ8GUzZYB7HIjcH378Ca62td8EM_4iptyICxRk1nQ4Ssbs_qaxJ8fZCFkrrTRENbTAfOFOhoWW7r6iEl9HTPpgXqs5xOliWELZeUt5UTnEul9Wod6006xxZxR4Wox29BkkmuieDRqMUEVfz4VaOqBzg0PkjCGlsY5rS17D6vtO50cIYkFANH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+</div>
+<div class="relative z-10 text-on-primary space-y-1">
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary-fixed">Magnetic Ecosystem</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary">MagSafe &amp; Grip</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Snap-on card wallets, dual-hinge kickstands, rings.</p>
+</div>
+</a>
+<!-- 5. Shockproof & Armor -->
+<a class="group relative rounded-3xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end min-h-[380px] p-space-lg" href="shop.html">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial extreme drop test aesthetic displaying a rugged yet sleek phone case with reinforced elastomer air-cushion corner bumpers surrounded by geometric concrete blocks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcXvhfsI4ID8_b3Qnjx17ENKIbYTXQtzRGcSxgweqDPLlnUj0bUnaZHB056QqoMBn-bLiBHmpqGEytDOlk5eL07MlSZb5ND8eSmA4Dz1Cf31BYkmqTzPPpKZg4Qq0qdu9ynrQeQPEhcltqMbOO50hh3h4YsfdxON27Wo_-Ixxf2ib5woRMI_PTpcSZrML_X7ByvK59ZqkLll5iiva2acFHBkcBZ4KdiRHCgqtRnXKV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+</div>
+<div class="relative z-10 text-on-primary space-y-1">
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary-fixed">Ballistic Grade</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary">Shockproof &amp; Armor</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Multi-ply honeycomb chassis tested from 15 feet.</p>
+</div>
+</a>
+<!-- 6. Luxury Leather -->
+<a class="group relative rounded-3xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end min-h-[380px] p-space-lg" href="shop.html">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-fashion Italian pebbled vegan leather phone case in rich caramel tan with debossed gold metallic logo resting on a luxury silk trench coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPOlBgCgezUTK4CpPkNFAvuDwU19Bj57FoIWDcoReVc_rE9BVb7XaA0zpNn2da5nhIwJD156n4i2P4Tx3PCgxK2aRyUvsCAa1kDqbH_Qv7Ok6whUKaGyaeefvrn66hKLuzrC_R6BtYOTvGi7RY55ExrhV493qQgqYvZLTFY2VkHB1bea01mU5YQ8vFo6cKhrNAd76XhTSYMAx1TMVfjwaXgru4g4Bw4zKAFC68k-LY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+</div>
+<div class="relative z-10 text-on-primary space-y-1">
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary-fixed">Atelier Collection</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary">Designer &amp; Leather</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Italian pebbled bio-leather with CNC aluminum buttons.</p>
+</div>
+</a>
+</div>
+</section>
+<!-- BESTSELLERS GRID -->
+<section class="w-full py-space-xl bg-surface-container-low" id="bestsellers">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="font-label-mono-spec text-label-mono-spec text-on-surface-variant uppercase tracking-widest mb-1">02 / Verified Classics</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight">Studio Bestsellers</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-badge text-label-badge uppercase tracking-wider" type="button">All Models</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-badge text-label-badge uppercase tracking-wider shadow-sm" type="button">iPhone 16</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-badge text-label-badge uppercase tracking-wider shadow-sm" type="button">Galaxy S24</button>
+</div>
+</div>
+<!-- Products Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Product 1 -->
+<div class="group bg-surface-container-lowest rounded-3xl p-space-md shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-surface-container mb-space-md">
+<span class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-badge text-label-badge uppercase tracking-wider">BESTSELLER</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Studio catalog shot of the AeroShield MagSafe case in Titanium Silver with subtle brushed metallic camera ring on pure studio white backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8LLHnCWzwMPPt9s1LzvW1EjRxvoxr_eAhYQm6373XhgyJQW7HROj1e6cj2O4yjPpWS5TGnfJJHvBOBY_PgiUCoq1H1rlHV43c5u_4VOulI64JvUkBXNTn0PZIeKaZBVUTx7b6JcejnBAAttRkucyPhWeT5hnHJY4DNj8tEIOfASvAqLM5lDGTub7tjYbGhzok__QK0E-ozrrvdqN37nhczMbyS1glcdc4EfNV6aMT"/>
+</div>
+<!-- Ratings -->
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-mono-spec text-[11px] text-on-surface-variant font-medium">4.9 (840)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">AeroShield Pro Max</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">iPhone 16 Pro / Pro Max</p>
+<!-- Color Swatches -->
+<div class="flex items-center gap-2 mt-3 mb-space-md">
+<button class="w-4 h-4 rounded-full bg-slate-400 shadow-sm ring-2 ring-primary ring-offset-1" title="Titanium Silver"></button>
+<button class="w-4 h-4 rounded-full bg-neutral-900 shadow-sm" title="Matte Midnight"></button>
+<button class="w-4 h-4 rounded-full bg-stone-300 shadow-sm" title="Desert Sand"></button>
+<button class="w-4 h-4 rounded-full bg-emerald-900 shadow-sm" title="Forest Emerald"></button>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-price-lg text-price-lg text-on-surface">$58 USD</span>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-headline-sm text-body-sm hover:bg-inverse-surface shadow-sm transition-colors flex items-center gap-1" type="button">
+<span>Quick Add</span>
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group bg-surface-container-lowest rounded-3xl p-space-md shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-surface-container mb-space-md">
+<span class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-label-badge uppercase tracking-wider">MAGSAFE READY</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Studio shot of Lucid Frost transparent case for Galaxy S24 Ultra with anti yellowing polycarbonate shell and aluminum buttons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWmVkYvLTHzObm0xXjfrKXlq9ndSh1RLQWx5e52z_QHxzKjf9J3DBNFBO3DWq1UtRkbu1wpYCnDzRQxsxH5FkOK34sfA-2ZCUh_oxkXqCGHCl6jorvf-dQXwAYx1QlLlOS5hL0Q_PVWhyaFrS5Yvi_59XJpZLkgL_skeVYDcm13W443FWfiCa_ZAZ5YaEKFg5RRxU5pdItfzxUAMgXXkgZjht1vpzA7SCqW3PLv2VM"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-mono-spec text-[11px] text-on-surface-variant font-medium">4.9 (512)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Lucid Frost Ultra</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Samsung Galaxy S24 Ultra</p>
+<div class="flex items-center gap-2 mt-3 mb-space-md">
+<button class="w-4 h-4 rounded-full bg-zinc-200 shadow-sm ring-2 ring-primary ring-offset-1" title="Crystal Frost"></button>
+<button class="w-4 h-4 rounded-full bg-neutral-900 shadow-sm" title="Smoke Obsidian"></button>
+<button class="w-4 h-4 rounded-full bg-indigo-950 shadow-sm" title="Deep Indigo"></button>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-price-lg text-price-lg text-on-surface">$52 USD</span>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-headline-sm text-body-sm hover:bg-inverse-surface shadow-sm transition-colors flex items-center gap-1" type="button">
+<span>Quick Add</span>
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group bg-surface-container-lowest rounded-3xl p-space-md shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-surface-container mb-space-md">
+<span class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-surface-variant text-on-surface font-label-badge text-label-badge uppercase tracking-wider">NEW ARRIVAL</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Studio view of handcrafted bio vegan leather case in desert dune sand with embossed subtle geometric monogram texture on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJbodlxUEo7JtTU4uhUQdJatcEvNuhx8njPZUoOImVgwl3ILJLWMyH0bsNmu5geNtPmQseaEfFzDA_Jvmko4_HkPq9BXRQp5y4kvt7609WkXhcjg7MIhjscJvS8O3JsvUhvsP9sKEe30BjG-dZORlqnesp507V2b-95dS5UuWbxYcEM4AtWzJ559VB14no0hNtrlhUJrPtITJ-p1QAd3xRjYhjQ_DL0W11ordRJWX7"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-label-mono-spec text-[11px] text-on-surface-variant font-medium">4.8 (390)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Atelier Vegan Pebble</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">iPhone 16 / 15 Pro</p>
+<div class="flex items-center gap-2 mt-3 mb-space-md">
+<button class="w-4 h-4 rounded-full bg-amber-800 shadow-sm ring-2 ring-primary ring-offset-1" title="Caramel Tan"></button>
+<button class="w-4 h-4 rounded-full bg-neutral-900 shadow-sm" title="Matte Midnight"></button>
+<button class="w-4 h-4 rounded-full bg-stone-300 shadow-sm" title="Desert Dune"></button>
+<button class="w-4 h-4 rounded-full bg-emerald-950 shadow-sm" title="Forest Green"></button>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-price-lg text-price-lg text-on-surface">$65 USD</span>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-headline-sm text-body-sm hover:bg-inverse-surface shadow-sm transition-colors flex items-center gap-1" type="button">
+<span>Quick Add</span>
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group bg-surface-container-lowest rounded-3xl p-space-md shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-surface-container mb-space-md">
+<span class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-badge text-label-badge uppercase tracking-wider">HEAVY DUTY</span>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rugged armor phone case in deep forest green with reinforced matte polycarbonate corners and magnetic kickstand ring folded flush" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA16QLmGkvYZngFqOGs6m-pvlcSiNJGx8tFP4xgoWQW5L9MEHjOUPNApT-UceHWlsUPs2WkSMw3Qz8XL5yaPJTNqOM1aUmS5XeKMvMxzEpqEDhy-tmtVicxf7qNjL8jFCKhl2ZgQbyJ8K3JUiQCWTByximC-9MFdR0SmlPRo_phQTJN7unIE7kwVsOLAKw3rCEnAkyED3WIheMjR4a0i5lP3wnr6g1SmutzuNplqknq"/>
+</div>
+<div class="flex items-center gap-1 mb-1">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-mono-spec text-[11px] text-on-surface-variant font-medium">5.0 (670)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Apex Ballistic Armor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">iPhone 16 Pro Max / S24</p>
+<div class="flex items-center gap-2 mt-3 mb-space-md">
+<button class="w-4 h-4 rounded-full bg-emerald-950 shadow-sm ring-2 ring-primary ring-offset-1" title="Forest Emerald"></button>
+<button class="w-4 h-4 rounded-full bg-neutral-900 shadow-sm" title="Midnight Core"></button>
+<button class="w-4 h-4 rounded-full bg-slate-500 shadow-sm" title="Gunmetal"></button>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-price-lg text-price-lg text-on-surface">$48 USD</span>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-headline-sm text-body-sm hover:bg-inverse-surface shadow-sm transition-colors flex items-center gap-1" type="button">
+<span>Quick Add</span>
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INNOVATION SPOTLIGHT: EXPLODED VIEW -->
+<section class="w-full py-24 bg-surface max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+<div class="rounded-3xl bg-surface-container p-space-lg md:p-space-xl overflow-hidden shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Graphic / Exploded Diagram View -->
+<div class="lg:col-span-6 relative flex justify-center">
+<div class="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md">
+<img class="w-full h-full object-cover" data-alt="Technical industrial 3D schematic exploded diagram breakdown of a luxury mobile phone case displaying the 3 separated architectural layers: outer matte plate, honeycomb TPU impact lattice, and aerospace aluminum camera bezel hovering in alignment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCdWIsQ340eFbXbq1MVdCVnIMu_5-v4m02owM3jO434TNPOYm8MjryKchjAHwNSM1z1Ps-K6WkX6zSLFsLMo8Umo8UJlnzGBoBIidJ49ZZq35I-ViwYrzNI4V5IwH1WEp-zDHFKFaRggHhJJHVbSHJCjuKqR17SLa25xW_8ctdzNeF1wyGRUkRjFArOK8GiiaheoLGDPGgEgIPsSAveVXd7w6Vk3SDB8rw8YVAceL-"/>
+<div class="absolute top-4 left-4 px-3 py-1.5 rounded-lg bg-surface-container-highest/80 backdrop-blur font-label-mono-spec text-[10px] text-on-surface uppercase tracking-widest font-semibold">
+              CAD Schematic v4.2 // Patents Pending
+            </div>
+</div>
+</div>
+<!-- Technical Exploded Spec Breakdown -->
+<div class="lg:col-span-6 space-y-space-lg">
+<div>
+<span class="font-label-mono-spec text-label-mono-spec uppercase text-on-surface-variant tracking-widest">Architectural Engineering</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mt-1">AURA AeroShield 16 Pro Max</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Every millimeter serves a definitive protective purpose. Engineered with a proprietary tri-layer composite matrix that dissipates kinetic drop shock across the entire chassis.
+            </p>
+</div>
+<div class="space-y-space-md">
+<!-- Layer 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-label-mono-spec font-bold text-[14px] shrink-0">
+                01
+              </div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Anti-Scratch Matte Oleophobic Backplate</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Resists grease, oil fingerprints, and everyday scuffs while maintaining silk-touch tactile friction in hand.</p>
+</div>
+</div>
+<!-- Layer 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-label-mono-spec font-bold text-[14px] shrink-0">
+                02
+              </div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">Shock-Absorbing TPU Honeycomb Air Core</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inner elastomeric pockets collapse microscopically upon high-velocity impact, absorbing up to 92% of kinetic shock.</p>
+</div>
+</div>
+<!-- Layer 3 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-label-mono-spec font-bold text-[14px] shrink-0">
+                03
+              </div>
+<div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold">CNC Machined 6063 Aluminum Camera Bezel</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1.8mm elevated aerospace aluminum perimeter protects delicate sapphire camera lenses from direct table scratches.</p>
+</div>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-space-sm px-6 py-3 rounded-full bg-primary text-on-primary font-headline-sm text-body-md hover:bg-inverse-surface shadow-sm transition-colors" href="#bestsellers">
+<span>EXPLORE AEROSHIELD SERIES</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- VALUE PROPOSITION / WHY CHOOSE US -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-space-xl space-y-2">
+<span class="font-label-mono-spec text-label-mono-spec text-on-surface-variant uppercase tracking-widest">Quality Benchmark</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight">The AURA Engineering Standard</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We bridge the gap between fragile designer runway aesthetics and bulky construction-site drop cases.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow duration-200 space-y-space-sm">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">emergency_home</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">15ft Drop Certified</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Subjected to 26 consecutive drops from 15 feet onto reinforced concrete with zero cracked screens.</p>
+<div class="font-label-mono-spec text-[10px] text-on-surface uppercase tracking-wider font-semibold pt-1">Mil-STD-810G 516.6 Compliant</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow duration-200 space-y-space-sm">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">trip_origin</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Instant MagSafe Snap</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Equipped with 38 grade-N52 neodymium rare earth magnets generating 1,200g of ultra-firm magnetic holding force.</p>
+<div class="font-label-mono-spec text-[10px] text-on-surface uppercase tracking-wider font-semibold pt-1">Qi2 Fast-Charging Ready</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow duration-200 space-y-space-sm">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">wb_sunny</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Anti-Yellowing Shield</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Formulated with blue-wavelength UV inhibitors that completely halt solar-induced polycarbonate discoloration.</p>
+<div class="font-label-mono-spec text-[10px] text-on-surface uppercase tracking-wider font-semibold pt-1">Lifetime Clarity Guarantee</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow duration-200 space-y-space-sm">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">eco</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Eco-Packaging</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Shipped in 100% plastic-free unbleached sugarcane pulp cases printed exclusively with non-toxic soy inks.</p>
+<div class="font-label-mono-spec text-[10px] text-on-surface uppercase tracking-wider font-semibold pt-1">FSC Certified &amp; Biodegradable</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CUSTOMER REVIEWS & SOCIAL PROOF -->
+<section class="w-full py-space-xl max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="font-label-mono-spec text-label-mono-spec text-on-surface-variant uppercase tracking-widest mb-1">03 / Field Reports</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight">Verified Studio Owners</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">4.9 / 5.0 Rating based on 2,400+ Global Reviews</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Dropped my iPhone 16 Pro on asphalt getting out of an Uber in Brooklyn. Not a single dent or scratch on the glass. The camera aluminum lip took the hit gracefully. Unreal craftsmanship."
           </p>
-        </div>
-        <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-on-surface-variant font-medium">
-          <span>Target: <code class="bg-surface-container px-1.5 py-0.5 rounded">homepage_aura_studio/code.html</code></span>
-          <span class="text-primary font-semibold">Launch Page &rarr;</span>
-        </div>
-      </a>
-
-      <!-- 02 Shop All Collection -->
-      <a href="./shop_all_phone_cases_collection/code.html" class="group bg-white rounded-2xl border border-border p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-        <div>
-          <div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container mb-4 relative">
-            <img src="./shop_all_phone_cases_collection/screen.png" alt="Shop All Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
-            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-              Screen 02
-            </span>
-          </div>
-          <div class="flex items-center justify-between mb-2">
-            <h2 class="text-xl font-bold text-primary group-hover:text-neutral-700 transition-colors">Catalog / Shop All</h2>
-            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-          </div>
-          <p class="text-sm text-on-surface-variant leading-relaxed">
-            Multi-faceted product catalog featuring device filters, MagSafe tags, material selectors, sorting controls, 3/4 column density switcher, and color swatches.
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of young minimalist architect in black mock neck sweater smiling gently in modern studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVXClC5PumxnO75x8cLgk0SQtyN4nBHPTC9pdyRRD98juRrVqB2aXOU0sz4kmNoUdl4wiFs172zjJ3ULuOsWBqCuMaA8JmD7B_Ot6wdDdTKPJvy9ClGeiC-1AIoRM6filPCvRQALp9bF8A7BdwdAkMQMwSHX1gyiGZ5Ucvm6yxnqb79tCslME3lSuX0iw36fXBrCeWq-5QLeW_mA5ZWPuSmHKMLy6zgyFrkVEhVlyJ"/>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Marcus Vance</span>
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-mono-spec text-[11px] text-on-surface-variant block">iPhone 16 Pro Max — Matte Obsidian</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Finally a clear case that actually doesn't turn that sickly yellow after 3 months in California sun. The buttons have that exact clicky tactile feedback like Apple native buttons."
           </p>
-        </div>
-        <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-on-surface-variant font-medium">
-          <span>Target: <code class="bg-surface-container px-1.5 py-0.5 rounded">shop_all_phone_cases_collection/code.html</code></span>
-          <span class="text-primary font-semibold">Launch Page &rarr;</span>
-        </div>
-      </a>
-
-      <!-- 03 Product Detail Page -->
-      <a href="./aura_armorshield_pro_product_detail_page/code.html" class="group bg-white rounded-2xl border border-border p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-        <div>
-          <div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container mb-4 relative">
-            <img src="./aura_armorshield_pro_product_detail_page/screen.png" alt="Product Detail Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
-            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-              Screen 03
-            </span>
-          </div>
-          <div class="flex items-center justify-between mb-2">
-            <h2 class="text-xl font-bold text-primary group-hover:text-neutral-700 transition-colors">ArmorShield Pro PDP</h2>
-            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-          </div>
-          <p class="text-sm text-on-surface-variant leading-relaxed">
-            Conversion-focused product detail page with 5-angle studio gallery, device picker, tactile finish selector, drop-test certification badges, bundle cross-sells, and reviews.
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of female industrial designer in cream linen shirt with clean neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMsHg2PaSXkK8nXNqGdjxjisSqc3u9-sdbFToKBmHRhQUmjH1w2YpqCtIHyqcCAtdYAUAqRSBELW_AFFU15HXRXWThWO-4l-15jA_4hcUdkJggCQnqRv2-0xo3N8Lch8IKTGRV5uxuTqCY3NXp6eMSVpfVv-dF1yn1GvL5MIF-IcL0nu68VztVXSEjCmKtFYLh0AD40dw-k5dmQ6lkqmjrxNXO5AE4w3DOsR_idXOf"/>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Elena Rostova</span>
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-mono-spec text-[11px] text-on-surface-variant block">Galaxy S24 Ultra — Lucid Frost</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "The pebbled vegan leather feels substantially better than OEM cases. MagSafe snap with my car mount is rock solid—zero wobbles even on cobblestone streets."
           </p>
-        </div>
-        <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-on-surface-variant font-medium">
-          <span>Target: <code class="bg-surface-container px-1.5 py-0.5 rounded">aura_armorshield_pro_product_detail_page/code.html</code></span>
-          <span class="text-primary font-semibold">Launch Page &rarr;</span>
-        </div>
-      </a>
-
-      <!-- 04 Shopping Bag & Checkout -->
-      <a href="./shopping_bag_checkout_aura_studio/code.html" class="group bg-white rounded-2xl border border-border p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-        <div>
-          <div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container mb-4 relative">
-            <img src="./shopping_bag_checkout_aura_studio/screen.png" alt="Shopping Bag Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
-            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-              Screen 04
-            </span>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of creative director in charcoal grey wool overcoat looking confident outdoors in Tokyo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIkJORX15hL4ITfCzJUGlB86lBQ1f3scOKl2r_9WzMO1iDIY3EnttF3jqXSctHgFhUyUWRPZBt-j0w8ryHP0jhIgXE7jbz7rscJqT64VE9AFFeYu0ak1sZaL_M6XVVJpuyinL3vvCo27DQ7lwFrwqwULoFYUBkW3hiBWjYP0jVaI4pcEnd1mg0A8odIvkWC5oeYUFZXEdZRcqKZfl-qxmnKcX5Wg45Nc7q5c2bCUqf"/>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Julian Chen</span>
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-mono-spec text-[11px] text-on-surface-variant block">iPhone 16 — Caramel Pebble Leather</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INSTAGRAM & COMMUNITY GALLERY -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="font-label-mono-spec text-label-mono-spec text-on-surface-variant uppercase tracking-widest mb-1">Community EDC Showcase</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight">Curated In The Wild</h2>
+</div>
+<a class="inline-flex items-center gap-2 font-headline-sm text-body-md text-primary hover:underline" href="#">
+<span>Follow @aurastudio on Instagram</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<!-- Insta 1 -->
+<div class="group relative aspect-square rounded-2xl overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Everyday carry flatlay with iPhone in obsidian case next to Leica M camera, brass pen, and black espresso cup on textured linen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV_zqqECl27eN2-qFCtZTxn24Qq8SnOpmggmIlJCOmDucYQPKTNVyOl3eQpfwBsxcIAt2dHCFncR57znPfEaPfRmH_ZgF59rl-7G_Uydc7iAvyghht4DJ_7iHIs5NaF-p8mwWzakTdlgsqr1iz6onnwKHHwCbMPLt0mFI9ct5kUCkDQb3ooMVoZ3Yu_kCQ_hAA6fz_rPpWhCuYfbHzcbt5d2nJyNNUuGq1C4oX8XWJ"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary font-label-mono-spec text-label-mono-spec">
+            #AuraEveryday
           </div>
-          <div class="flex items-center justify-between mb-2">
-            <h2 class="text-xl font-bold text-primary group-hover:text-neutral-700 transition-colors">Shopping Bag &amp; Checkout</h2>
-            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+<!-- Insta 2 -->
+<div class="group relative aspect-square rounded-2xl overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="iPhone encased in clear frosted case resting on an aluminum laptop stand next to mechanical keyboard in sunlit minimal workstation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIJUX4nEqz_pQD_wiavgm9mHx3P4Lh2juutMOIYelc9uTymXB1Tt7wB4CzDcrWjqLYt7aZQ-uMyEEnMU7C3hQDeUTwQ4JgDtd33-w4rHoikSzDHlOq9ZX94PvPo-7EKgFORcj93AB_Pf84812Z8qNzi_X7r8oZdT6fYJHlSk8RNPcg9IzBhBVERdVVgQycAxz8q7bWwbuBunIkCJ02IyJLwJZ5r0gwMp_UWf8EUbFI"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary font-label-mono-spec text-label-mono-spec">
+            #AuraEveryday
           </div>
-          <p class="text-sm text-on-surface-variant leading-relaxed">
-            Frictionless shopping bag experience with interactive free shipping tier progress, quantity adjustments, MagSafe add-ons, promo code field, and Express Checkout triggers.
+</div>
+<!-- Insta 3 -->
+<div class="group relative aspect-square rounded-2xl overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Person holding Samsung S24 in matte forest green armor case while sipping coffee in a modern brutalist concrete cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiWnlQaKRm61_Y4lrysXBYT066UAI1FVG5vHwjFvvUP9IkFYCtt1cE0aUPIrfOkyi8DUXmDl7k0x9ztNzsTJOuexZkmO2VM4KTXrxYWWFrTrlcr-bx3XSy2KJgg93qIE2M4z95aEQNij-xm3tGo9eu8sgQ8sUmmOucsBv4JYfGUy3OgCvq0hSWfj5xkkRELjpOdj_mfC76iGaIKDyPAW6o39yuKNg6gH4l6RAqM8rl"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary font-label-mono-spec text-label-mono-spec">
+            #AuraEveryday
+          </div>
+</div>
+<!-- Insta 4 -->
+<div class="group relative aspect-square rounded-2xl overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Top down aesthetic photo of luxury vegan leather case on top of a hardcover architectural design monograph next to ceramic vase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnYsaDbUe2DA22yL4WolYv3WjmHtE-IABcXEjFQfFVMc9yZqkHlk4IMUlbwEUh9hrI4a6wn3LhZkHsaoa2fcMdkefpndze48w2tObNaFg_vZrZ8z5bT0f56ycsOZGGH9hz_54diqH7bntnzkdcm8W9j6HIxofERTLQSi5q6dFYvihu78nwRH2UBTMJIJqBbJ3DyXgITkI72O-yP67xJ4IOQkPGOvEeCQVJqBGjOXFT"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary font-label-mono-spec text-label-mono-spec">
+            #AuraEveryday
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- NEWSLETTER PROMO BANNER -->
+<section class="w-full py-20 bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+<div class="rounded-3xl bg-primary text-on-primary p-space-lg md:p-space-xl shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-xl text-center lg:text-left">
+<span class="font-label-badge text-label-badge text-primary-fixed uppercase tracking-widest">PRIVATE ACCESS</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-semibold tracking-tight text-on-primary uppercase">
+            Join the AURA Club
+          </h2>
+<p class="font-body-md text-body-md text-on-primary/80">
+            Receive 15% off your first studio drop, early access to limited edition runs, and invite-only sample releases.
           </p>
-        </div>
-        <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-on-surface-variant font-medium">
-          <span>Target: <code class="bg-surface-container px-1.5 py-0.5 rounded">shopping_bag_checkout_aura_studio/code.html</code></span>
-          <span class="text-primary font-semibold">Launch Page &rarr;</span>
-        </div>
-      </a>
-    </div>
-
-    <!-- Design System Reference Card -->
-    <div class="bg-white rounded-2xl border border-border p-8 shadow-xs">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Design Specifications</span>
-          <h3 class="text-2xl font-bold text-primary">Atelier Tech Luxe System</h3>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="px-3 py-1 rounded-full bg-surface-container text-xs font-semibold">Plus Jakarta Sans</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-xs font-semibold">Tailwind CSS</span>
-          <span class="px-3 py-1 rounded-full bg-surface-container text-xs font-semibold">8pt Micro-Grid</span>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
-        <div class="p-4 rounded-xl bg-surface-container">
-          <div class="w-6 h-6 rounded-full bg-[#0d0d11] mb-2 border border-white"></div>
-          <span class="font-bold block text-primary">Obsidian Black</span>
-          <span class="text-on-surface-variant">#0D0D11 (Primary)</span>
-        </div>
-        <div class="p-4 rounded-xl bg-surface-container">
-          <div class="w-6 h-6 rounded-full bg-[#8a857d] mb-2 border border-white"></div>
-          <span class="font-bold block text-primary">Slate Stone</span>
-          <span class="text-on-surface-variant">#8A857D (Secondary)</span>
-        </div>
-        <div class="p-4 rounded-xl bg-surface-container">
-          <div class="w-6 h-6 rounded-full bg-[#d8c7b5] mb-2 border border-white"></div>
-          <span class="font-bold block text-primary">Soft Travertine</span>
-          <span class="text-on-surface-variant">#D8C7B5 (Accent)</span>
-        </div>
-        <div class="p-4 rounded-xl bg-surface-container">
-          <div class="w-6 h-6 rounded-full bg-[#fbfbfd] mb-2 border border-border"></div>
-          <span class="font-bold block text-primary">Off-White Canvas</span>
-          <span class="text-on-surface-variant">#FBFBFD (Surface)</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="py-6 text-center text-xs text-on-surface-variant border-t border-border">
-    Extracted into <code class="bg-surface-container px-2 py-1 rounded text-primary font-mono">C:/Users/LENOVO/.gemini/antigravity/scratch/stitch_premium_phone_case_storefront</code>
-  </footer>
-</body>
-</html>
+</div>
+<form class="w-full lg:w-auto flex flex-col sm:flex-row items-stretch gap-space-xs">
+<input class="px-space-md py-3.5 rounded-full bg-surface text-on-surface placeholder:text-on-surface-variant font-body-md focus:outline-none min-w-[280px]" placeholder="Enter your email address" type="email"/>
+<button class="px-8 py-3.5 rounded-full bg-inverse-surface text-inverse-on-surface font-headline-sm text-price-md uppercase hover:bg-surface-variant hover:text-on-surface transition-colors shadow-sm" type="button">
+            Claim 15% Off
+          </button>
+</form>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low border-t border-surface-variant/50"><div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl border-b border-surface-variant/40"><div class="lg:col-span-4 space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-semibold">AURA STUDIO</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Architectural grade tech accoutrements. Crafted with aerospace aluminum, tactile polymers, and laboratory-tested drop shields for those who demand quiet luxury.</p><div class="pt-space-xs"><p class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant mb-space-xs">Certified Safe Materials</p><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="font-label-mono-spec text-[11px] px-2 py-1 bg-surface-container rounded border border-surface-variant/60">RECYCLED ALUMINUM</span><span class="font-label-mono-spec text-[11px] px-2 py-1 bg-surface-container rounded border border-surface-variant/60">10FT TESTED</span></div></div></div><div class="lg:col-span-2 space-y-space-sm"><h4 class="font-headline-sm text-[15px] font-semibold text-on-surface uppercase tracking-wide">Shop Series</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="iphone-cases" href="shop.html">iPhone 16 / 15 Series</a></li><li><a class="hover:text-on-surface transition-colors" data-path="samsung-cases" href="shop.html">Samsung Galaxy S24</a></li><li><a class="hover:text-on-surface transition-colors" data-path="magsafe-and-tech" href="shop.html">MagSafe Wallets &amp; Stands</a></li><li><a class="hover:text-on-surface transition-colors" data-path="glass-screen-protectors" href="shop.html">Glass Screen Protectors</a></li><li><a class="hover:text-on-surface transition-colors" data-path="shop-all" href="shop.html">New Releases</a></li></ul></div><div class="lg:col-span-3 space-y-space-sm"><h4 class="font-headline-sm text-[15px] font-semibold text-on-surface uppercase tracking-wide">Customer Care</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="order-tracking" href="#">Order Tracking</a></li><li><a class="hover:text-on-surface transition-colors" data-path="shipping-and-returns" href="#">Shipping &amp; Global Returns</a></li><li><a class="hover:text-on-surface transition-colors" data-path="warranty-and-drops" href="#">Lifetime Drop Warranty</a></li><li><a class="hover:text-on-surface transition-colors" data-path="faq" href="#">Frequently Asked Questions</a></li><li><a class="hover:text-on-surface transition-colors" data-path="contact" href="#">Contact Concierge</a></li></ul></div><div class="lg:col-span-3 space-y-space-md"><div class="space-y-space-xs"><h4 class="font-headline-sm text-[15px] font-semibold text-on-surface uppercase tracking-wide">The Circle</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Subscribe for private collection drops and receive 15% off your first studio order.</p></div><form class="space-y-space-xs"><div class="flex items-center rounded-lg bg-surface border border-surface-variant/60 focus-within:border-primary overflow-hidden"><input class="w-full px-space-md py-2.5 font-body-sm text-body-sm bg-transparent text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none" placeholder="Enter your email" type="email"/><button class="px-space-md py-2.5 bg-primary text-on-primary font-headline-sm text-[13px] font-semibold uppercase hover:bg-on-surface transition-colors" type="button">Join</button></div><span class="block font-label-badge text-[10px] text-on-surface-variant/70">Unsubscribe anytime. Zero spam guaranteed.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 AURA STUDIO Inc. All rights reserved.</p><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><span class="text-surface-variant">•</span><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><span class="text-surface-variant">•</span><a class="hover:text-on-surface transition-colors" data-path="warranty-and-drops" href="#">Warranty</a></div><div class="flex items-center gap-space-sm text-on-surface-variant"><div class="px-2.5 py-1 bg-surface-container rounded border border-surface-variant/40 font-label-mono-spec text-[10px] uppercase font-semibold">Apple Pay</div><div class="px-2.5 py-1 bg-surface-container rounded border border-surface-variant/40 font-label-mono-spec text-[10px] uppercase font-semibold">Visa</div><div class="px-2.5 py-1 bg-surface-container rounded border border-surface-variant/40 font-label-mono-spec text-[10px] uppercase font-semibold">Mastercard</div><div class="px-2.5 py-1 bg-surface-container rounded border border-surface-variant/40 font-label-mono-spec text-[10px] uppercase font-semibold">Amex</div><div class="px-2.5 py-1 bg-surface-container rounded border border-surface-variant/40 font-label-mono-spec text-[10px] uppercase font-semibold">PayPal</div></div></div></div></footer><script src="store.js"></script></body></html>
