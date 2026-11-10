@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AURA Studio — Premium Storefront Prototype Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            surface: '#fbf8fe',
+            'surface-container': '#f0edf2',
+            'surface-container-high': '#eae7ed',
+            'on-surface': '#1b1b1f',
+            'on-surface-variant': '#47464b',
+            primary: '#0d0d11',
+            accent: '#625e57',
+            border: '#e8e8ed',
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface antialiased font-sans min-h-screen flex flex-col">
+  <!-- Top Announcement -->
+  <header class="bg-primary text-white py-2 px-6 text-center text-xs tracking-widest uppercase font-medium">
+    AURA Studio • Prototype Navigation Hub • Atelier Tech Luxe Design System
+  </header>
+
+  <div class="max-w-6xl mx-auto px-6 py-12 flex-1 w-full">
+    <!-- Brand Title -->
+    <div class="mb-10 text-center max-w-2xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-xs font-semibold tracking-wider uppercase mb-3 text-on-surface-variant">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        Interactive Storefront Suite
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-primary uppercase">
+        AURA STUDIO
+      </h1>
+      <p class="text-on-surface-variant mt-3 text-base leading-relaxed">
+        High-end mobile accessories storefront prototype featuring aerospace-grade engineering aesthetic, tactile UI, and complete customer journey screens.
+      </p>
+    </div>
+
+    <!-- Quick Navigation Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <!-- 01 Homepage -->
+      <a href="./homepage_aura_studio/code.html" class="group bg-white rounded-2xl border border-border p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container mb-4 relative">
+            <img src="./homepage_aura_studio/screen.png" alt="Homepage Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Screen 01
+            </span>
+          </div>
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="text-xl font-bold text-primary group-hover:text-neutral-700 transition-colors">Homepage</h2>
+            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Editorial hero presentation, flagship case release teaser, curated category grids, material engineering breakdown, and customer accolades.
+          </p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-on-surface-variant font-medium">
+          <span>Target: <code class="bg-surface-container px-1.5 py-0.5 rounded">homepage_aura_studio/code.html</code></span>
+          <span class="text-primary font-semibold">Launch Page &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 02 Shop All Collection -->
+      <a href="./shop_all_phone_cases_collection/code.html" class="group bg-white rounded-2xl border border-border p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container mb-4 relative">
+            <img src="./shop_all_phone_cases_collection/screen.png" alt="Shop All Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Screen 02
+            </span>
+          </div>
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="text-xl font-bold text-primary group-hover:text-neutral-700 transition-colors">Catalog / Shop All</h2>
+            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Multi-faceted product catalog featuring device filters, MagSafe tags, material selectors, sorting controls, 3/4 column density switcher, and color swatches.
+          </p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-on-surface-variant font-medium">
+          <span>Target: <code class="bg-surface-container px-1.5 py-0.5 rounded">shop_all_phone_cases_collection/code.html</code></span>
+          <span class="text-primary font-semibold">Launch Page &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 03 Product Detail Page -->
+      <a href="./aura_armorshield_pro_product_detail_page/code.html" class="group bg-white rounded-2xl border border-border p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container mb-4 relative">
+            <img src="./aura_armorshield_pro_product_detail_page/screen.png" alt="Product Detail Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Screen 03
+            </span>
+          </div>
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="text-xl font-bold text-primary group-hover:text-neutral-700 transition-colors">ArmorShield Pro PDP</h2>
+            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Conversion-focused product detail page with 5-angle studio gallery, device picker, tactile finish selector, drop-test certification badges, bundle cross-sells, and reviews.
+          </p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-on-surface-variant font-medium">
+          <span>Target: <code class="bg-surface-container px-1.5 py-0.5 rounded">aura_armorshield_pro_product_detail_page/code.html</code></span>
+          <span class="text-primary font-semibold">Launch Page &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 04 Shopping Bag & Checkout -->
+      <a href="./shopping_bag_checkout_aura_studio/code.html" class="group bg-white rounded-2xl border border-border p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container mb-4 relative">
+            <img src="./shopping_bag_checkout_aura_studio/screen.png" alt="Shopping Bag Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Screen 04
+            </span>
+          </div>
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="text-xl font-bold text-primary group-hover:text-neutral-700 transition-colors">Shopping Bag &amp; Checkout</h2>
+            <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Frictionless shopping bag experience with interactive free shipping tier progress, quantity adjustments, MagSafe add-ons, promo code field, and Express Checkout triggers.
+          </p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-on-surface-variant font-medium">
+          <span>Target: <code class="bg-surface-container px-1.5 py-0.5 rounded">shopping_bag_checkout_aura_studio/code.html</code></span>
+          <span class="text-primary font-semibold">Launch Page &rarr;</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Design System Reference Card -->
+    <div class="bg-white rounded-2xl border border-border p-8 shadow-xs">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Design Specifications</span>
+          <h3 class="text-2xl font-bold text-primary">Atelier Tech Luxe System</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="px-3 py-1 rounded-full bg-surface-container text-xs font-semibold">Plus Jakarta Sans</span>
+          <span class="px-3 py-1 rounded-full bg-surface-container text-xs font-semibold">Tailwind CSS</span>
+          <span class="px-3 py-1 rounded-full bg-surface-container text-xs font-semibold">8pt Micro-Grid</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+        <div class="p-4 rounded-xl bg-surface-container">
+          <div class="w-6 h-6 rounded-full bg-[#0d0d11] mb-2 border border-white"></div>
+          <span class="font-bold block text-primary">Obsidian Black</span>
+          <span class="text-on-surface-variant">#0D0D11 (Primary)</span>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container">
+          <div class="w-6 h-6 rounded-full bg-[#8a857d] mb-2 border border-white"></div>
+          <span class="font-bold block text-primary">Slate Stone</span>
+          <span class="text-on-surface-variant">#8A857D (Secondary)</span>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container">
+          <div class="w-6 h-6 rounded-full bg-[#d8c7b5] mb-2 border border-white"></div>
+          <span class="font-bold block text-primary">Soft Travertine</span>
+          <span class="text-on-surface-variant">#D8C7B5 (Accent)</span>
+        </div>
+        <div class="p-4 rounded-xl bg-surface-container">
+          <div class="w-6 h-6 rounded-full bg-[#fbfbfd] mb-2 border border-border"></div>
+          <span class="font-bold block text-primary">Off-White Canvas</span>
+          <span class="text-on-surface-variant">#FBFBFD (Surface)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-6 text-center text-xs text-on-surface-variant border-t border-border">
+    Extracted into <code class="bg-surface-container px-2 py-1 rounded text-primary font-mono">C:/Users/LENOVO/.gemini/antigravity/scratch/stitch_premium_phone_case_storefront</code>
+  </footer>
+</body>
+</html>
